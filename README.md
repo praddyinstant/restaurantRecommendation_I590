@@ -1,3 +1,6 @@
 # restaurantRecommendation_I590
 A recommendation system is an application that can identify entities of interest for a person and provide suggestions based on the past record of person’s likes and preferences. The entity of interest can be anything, for example it can be a product, a movie or a news article. As a part of this project, we are planning to build a recommendation system which can suggest restaurants that might be of interest to a Yelp user. To achieve this, we are utilizing the academic Yelp dataset which has about 1.6M reviews by 366K users. 
 
+We are trying to analyze the academic Yelp dataset to suggest restaurants to the users of Yelp. We will be building a recommender system to come up with a suggestion of restaurants. The suggestions will be based on the user preferences obtained from the past ratings and reviews given by the user, frequently visited cuisines of the user and the time preference of the user. 
+The user input will be the city of visit and the intended visiting time. These inputs will be taken using a UI and the same UI will be used to display the suggestions. By taking the user check in time into account, we intend to provide a list of restaurants that are most popular (based on number of check-ins and good reviews) for a meal at that time of the day.
+
