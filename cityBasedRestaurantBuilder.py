@@ -34,25 +34,25 @@ if __name__ == "__main__":
 
 	for item in restaurant.find():
 		if item["city"] == "Edinburgh":
-			Edinburgh.insert_one(item)
+			Edinburgh.insert(item)
 		if item["city"] == "Karlsruhe":
-			Karlsruhe.insert_one(item)
+			Karlsruhe.insert(item)
 		if item["city"] == "Montreal":
-			Montreal.insert_one(item)
+			Montreal.insert(item)
 		if item["city"] == "Waterloo":
-			Waterloo.insert_one(item)
+			Waterloo.insert(item)
 		if item["city"] == "Pittsburgh":
-			Pittsburgh.insert_one(item)
+			Pittsburgh.insert(item)
 		if item["city"] == "Charlotte":
-			Charlotte.insert_one(item)
+			Charlotte.insert(item)
 		if item["city"] == "Urbana":
-			Urbana_Champaign.insert_one(item)
+			Urbana_Champaign.insert(item)
 		if item["city"] == "Phoenix":
-			Phoenix.insert_one(item)
+			Phoenix.insert(item)
 		if item["city"] == "Las Vegas":
-			Las_Vegas.insert_one(item)
+			Las_Vegas.insert(item)
 		if item["city"] == "Madison":
-			Madison.insert_one(item)
+			Madison.insert(item)
 
 	print Edinburgh.count()
 	print Karlsruhe.count()
