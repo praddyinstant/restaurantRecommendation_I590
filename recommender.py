@@ -97,7 +97,7 @@ def recommendCallBack():
 
 	print "We recommend these restaurants based on your city, time and previous food preferences: "
 	for i in finalList:
-		if maximum <= 10:
+		if maximum <= 8:
 			for r in res:
 				if i == r["business_id"]:
 					print "Restaurant name: ",r['name']," Value: ",finalDict[r['business_id']]
