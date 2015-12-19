@@ -1,3 +1,10 @@
+'''
+
+This file builds a collection that stores a list of categories(possibily having some redundancy) against each user_id in the yelp_test_reduced_user collection. This list corresponds to all the various categories the user has reviewed. 
+
+'''
+
+
 from pymongo import MongoClient
 
 if __name__ == '__main__':
