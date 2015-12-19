@@ -1,4 +1,11 @@
-import re
+'''
+
+This file builds a MongoDB collection corresponding to the user json file that is present in the dataset
+
+'''
+
+
+
 import json
 from pymongo import *
 
@@ -11,7 +18,6 @@ def decode_json(line):
 with open("yelp_academic_dataset_user.json") as f:
 	yelp_data_user = [decode_json(line) for line in f]
 
-#print len(yelp_data_business)
 
 if __name__ == '__main__':
 	client = MongoClient()
