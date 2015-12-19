@@ -1,3 +1,11 @@
+'''
+
+This file filters out only those reviews that are for a restaurant.
+
+'''
+
+
+
 from pymongo import MongoClient
 
 if __name__ == "__main__":
