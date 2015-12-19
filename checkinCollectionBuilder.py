@@ -1,3 +1,10 @@
+'''
+
+This file builds a collection that can store the checkin counts for various meal times for each business.
+
+'''
+
+
 import json
 from pymongo import MongoClient
 
@@ -20,9 +27,6 @@ if __name__ == '__main__':
     checkin = dBase.yelp_test_checkin
 
     checkin.remove({})
-    # for item in restaurant.find():
-    #     if checkin.find_one({"business_id": item["business_id"]}) != None:
-    #         checkin.insert(item)?
 
     for item in yelp_data_checkin:
         if restaurant.find_one({"business_id": item["business_id"]}) != None:
