@@ -22,9 +22,9 @@ def recommendCallBack():
 		tim_value = "latenight"
 	print city_value
 	print tim_value
-	str1 = usr.get() + " Needs Recommendations for " + str(tim_value) + " in " + str(city_value)
-
-
+	if usr.get() == "":
+		tkMessageBox.showinfo( "Warning", "No User ID was given")
+		sys.exit(0)
 	#user_id = raw_input("Please enter your Yelp user id: ")
 	#city = raw_input("Please enter your city preference: ")
 	#time = raw_input("Please enter your preference for time: ").lower()
@@ -34,7 +34,7 @@ def recommendCallBack():
 	print "Please wait while we find you some nice restaurants . . ."
 
 	if userPref.find_one({"user_id" : user_id}) == None:
-		print "Sorry invalid user id."
+		tkMessageBox.showinfo( "Warning", "No Valid User ID was given")
 		sys.exit(0)
 
 	preferences = []
@@ -156,6 +156,7 @@ if __name__ == "__main__":
 	scrollbar.pack(side=RIGHT, fill=Y)
 	cities.pack(side=LEFT, fill=BOTH, expand=1)
 	cities.insert(0,"Edinburgh","Karlsruhe","Montreal","Waterloo","Pittsburgh","Charlotte","Urbana-Champaign", "Phoenix","Las Vegas","Madison")
+	cities.select_set(0)
 	frame.place(x = 150, y = 130)
 
 	var1 = IntVar()
