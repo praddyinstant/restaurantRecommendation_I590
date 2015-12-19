@@ -1,3 +1,11 @@
+'''
+
+This file creates a new collection that stores users' restaurant category preferences in sorted order, based on the total number of times he / she has reviewed that category.
+
+'''
+
+
+
 from pymongo import MongoClient
 
 if __name__ == "__main__":
