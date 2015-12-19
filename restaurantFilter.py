@@ -1,3 +1,8 @@
+'''
+
+This file filters out the restaurants from all different kind of businesses that are there in the business json file.
+
+'''
 import json
 from pymongo import MongoClient
 
@@ -9,10 +14,6 @@ def decode_json(line):
 
 with open("yelp_academic_dataset_business.json") as f:
 	yelp_data_business = [decode_json(line) for line in f]
-# The following two lines are giving me memory error while decoding the review json file
-#with open("yelp_academic_dataset_review.json") as g:
-#	yelp_data_review = [decode_json(line) for line in g]
-
 
 if __name__ == '__main__':
 	client = MongoClient()
