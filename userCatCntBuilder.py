@@ -1,3 +1,9 @@
+'''
+
+This file builds a new collection that stores user_id and counts for each restaurant categories he / she has reviewed.
+
+'''
+
 from pymongo import MongoClient
 
 if __name__ == "__main__":
