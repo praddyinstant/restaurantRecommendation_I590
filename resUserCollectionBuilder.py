@@ -1,3 +1,11 @@
+'''
+
+This file builds a user collection that contains only those users whose review count field has a value of >= 1000, and who has written at least one review for a restaurant.
+
+'''
+
+
+
 from pymongo import *
 
 if __name__ == '__main__':
